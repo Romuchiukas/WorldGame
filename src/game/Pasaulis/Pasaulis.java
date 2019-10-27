@@ -1,22 +1,5 @@
 package game.Pasaulis;
 
-//1. Sala / pasaulis
-//    a)List<Elementas> elementai
-//2.Zmogus
-//  - vardas -->id prideti konstruojant zm
-//  - amzius
-//
-//  - gimsta -> gauna id
-//
-//  - zingsnis pridedamas kuriant zmogu
-//  - meldziasi
-//  - sensta
-//  - mirsta
-//  -turi vaiku
-// - isrusiuoti ir suskaiciuori kiek zmoniu is listo
-
-//3.Daiktas -
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
