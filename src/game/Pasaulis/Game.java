@@ -22,12 +22,21 @@ public class Game {
 
         //sukamas pasaulio metu ciklas 40m.
         for (int year = 0; year < 40; year++) {
+            //senstanti populiacija
             pasaulis.senejimas();
-            System.out.println("Sensta zmoniu " + pasaulis.population());
+            int senstantiPop = pasaulis.population();
+            System.out.println("Sensta zmoniu " + senstantiPop);
+
+            //mirtys populiacijoje
             pasaulis.mm();
-            System.out.println("Po mirties " + pasaulis.population());
+            int mirtysPop = senstantiPop - pasaulis.population();
+            System.out.println("Mirtys populiacijoje: " + mirtysPop);
+
+
+            //gimimai populiacijoje
             pasaulis.born();
-//            System.out.println("Su gimusiais " + pasaulis.population() + pasaulis.getZmones());
+            int gimimaiPop = Math.abs(senstantiPop - pasaulis.population());
+            System.out.println("Gimusieji populiacijoje: " + gimimaiPop);
             System.out.println("---");
 
             //System.out.println(pasaulis.population() );

@@ -10,14 +10,9 @@ public class Zmogus {
 
     private static String[] vardai = {"Jonas", "Antanas", "Ona", "Birute", "Petras", "Danute"};
 
-    //TODO isfiltruoti ir priskirti lyti
-
-
     public static int count() {
         return numeris;
     }
-
-    ;
 
     public void aging() {
         amzius++;
@@ -25,7 +20,7 @@ public class Zmogus {
 
     // konstruktorius
     Zmogus() {
-        this.vardas = vardai[Pasaulis.R.nextInt(vardai.length)]; //atsitiktinis vardas is listo
+        this.vardas = vardai[Pasaulis.R.nextInt(vardai.length)];     //atsitiktinis vardas is listo
         this.id = numeris++;
         this.gender = getGender();
     }
@@ -77,28 +72,6 @@ public class Zmogus {
         public String getSpecName() {
             return specName;
         }
-
-
-
-
-//
-//        Gender(final String specName) {
-//            this.specName = specName;
-//        }
-//
-//        Gender(final boolean isMan) {
-//            this();
-//            this.isMan = isMan;;
-//        }
-//
-//        public String getSpecName() {
-//            return specName;
-//        }
-//
-//        public boolean isMan() {
-//            return isMan;
-//        }
-
     }
 
     @Override
