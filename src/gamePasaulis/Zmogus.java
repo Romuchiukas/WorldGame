@@ -1,7 +1,5 @@
 package gamePasaulis;
 
-import java.util.Random;
-
 public class Zmogus {
 
     private String vardas;
@@ -62,8 +60,8 @@ public class Zmogus {
         //random getteris
         //reiketu ideti lyti pagal varda
         public static Gender getRandomGender() {
-            Random random = new Random();
-            return values()[random.nextInt(values().length)];
+//            Random random = new Random();
+            return values()[Pasaulis.R.nextInt(values().length)];
         }
     }
 
