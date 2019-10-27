@@ -70,12 +70,6 @@ public class Pasaulis {
 
         //isima zmones pagal amziu
         // zmones.removeIf(z -> z.getAmzius() >= 60);
-        //TODO pasiimti mirusiuju skaiciu??
-
-//        int mortal = 0;
-//        boolean x = (z.getAmzius() >= 60) && R.nextBoolean();
-//        if(x) mortal++;
-//        return x;
     }
 
     //zmoniu gimimas santykinai nuo populiacijos;
