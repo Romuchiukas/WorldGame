@@ -49,10 +49,6 @@ public class Zmogus {
         return gender;
     }
 
-    public void setGender(Gender gender) {
-        this.gender = gender;
-    }
-
     //lyciu enumas su random geteriu
     enum Gender {
         F("Female"), M("Male");
@@ -64,17 +60,13 @@ public class Zmogus {
         }
 
         //random getteris
-        //reiketu ideti pagal varda lyti
+        //reiketu ideti lyti pagal varda
         public static Gender getRandomGender() {
             Random random = new Random();
             return values()[random.nextInt(values().length)];
-
-        }
-
-        public String getSpecName() {
-            return specName;
         }
     }
+
 
     @Override
     public String toString() {
@@ -82,7 +74,7 @@ public class Zmogus {
                 "vardas='" + vardas + '\'' +
                 ", amzius=" + amzius +
                 ", id=" + id +
-                ", gender=" + gender +
+                ", gender=" + gender.specName +
                 '}' + "\n";
     }
 }

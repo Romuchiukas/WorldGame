@@ -6,7 +6,6 @@ public class Game {
         Pasaulis pasaulis = new Pasaulis();
 
         //sukuriamas pradinis zmoniu skaicius atsitiktinai intervale
-
         int skaicius = Pasaulis.R.nextInt(11) + 10;//intervalas 10 ..20
 
         for (int i = 1; i < skaicius; i++) {
@@ -14,8 +13,8 @@ public class Game {
             pasaulis.pridetiZmogu(z);
             //System.out.println(pasaulis.getZmones());
         }
-        System.out.println(pasaulis.getZmones());
 
+        System.out.println(pasaulis.getZmones());
         System.out.println("--");
         System.out.println("Viso zmoniu prideta pradzioje: " + pasaulis.population());
         System.out.println("--");
