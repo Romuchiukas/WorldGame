@@ -1,10 +1,12 @@
 package gamePasaulis;
 
+import java.util.Random;
+
 public class Zmogus {
 
     private String vardas;
     private int amzius;
-    private int id = 0;                          //jei static tuomet laukas lieka tik klases, paima tik paskutine reiksme.
+    private int id = 0;
     private static int numeris = 1;
     private Gender gender;
 
@@ -22,7 +24,7 @@ public class Zmogus {
     Zmogus() {
         this.vardas = vardai[Pasaulis.R.nextInt(vardai.length)];     //atsitiktinis vardas is listo
         this.id = numeris++;
-        this.gender = getGender();
+        this.gender = Gender.getRandomGender();
     }
 
     //konstruktorius su amziumi
@@ -56,18 +58,18 @@ public class Zmogus {
         F("Female"), M("Male");
 
         final String specName;
-        //private boolean isMan;
 
         Gender(String specName) {
             this.specName = specName;
         }
 
-//        //random getteris
-//        //reiketu ideti pagal varda lyti
-//        public static Gender getRandomGender() {
-//            Random random = new Random();
-//            return values()[random.nextInt(values().length)];
-//        }
+        //random getteris
+        //reiketu ideti pagal varda lyti
+        public static Gender getRandomGender() {
+            Random random = new Random();
+            return values()[random.nextInt(values().length)];
+
+        }
 
         public String getSpecName() {
             return specName;

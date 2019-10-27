@@ -18,13 +18,10 @@ public class Pasaulis {
     //atsitiktiniu sk generatorius
     public static Random R = new Random();
 
-
     //pasaulio amziaus geteris
     public int getLaikas() {
         return laikas;
     }
-
-    ;
 
     //metodas zmoniu skaiciui
     public int population() {
@@ -43,7 +40,6 @@ public class Pasaulis {
     //metodas senejimo -> sukantis pasaulio metams seneja zmogus
     public void senejimas() {
         zmones.forEach(z -> z.aging());
-
     }
 
     public void mm() {
