@@ -60,9 +60,9 @@ public class Zmogus {
         //random getteris
         //reiketu ideti lyti pagal varda
         public static Gender getRandomGender() {
-//            Random random = new Random();
             return values()[Pasaulis.R.nextInt(values().length)];
         }
+
     }
 
 
