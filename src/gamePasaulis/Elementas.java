@@ -1,4 +1,4 @@
-package game.Pasaulis;
+package gamePasaulis;
 
 public class Elementas{
     //String pavadinimas;

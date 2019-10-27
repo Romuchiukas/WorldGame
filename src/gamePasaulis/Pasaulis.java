@@ -1,4 +1,4 @@
-package game.Pasaulis;
+package gamePasaulis;
 
 import java.util.ArrayList;
 import java.util.List;
